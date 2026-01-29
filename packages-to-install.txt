@@ -1,0 +1,12 @@
+client:
+
+tailwindcss
+@tailwindcss/vite
+react-icons
+react-redux
+@redux/toolkit
+react-router-dom
+yup
+formik
+react-toastify
+clsx

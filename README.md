@@ -46,7 +46,7 @@ npm run dev
 
 3️⃣ Frontend Setup: 
 
-In terminal/command prompt, navigate to Emp-Manager directory and move to client directory.
+Open a new terminal window, In terminal/command prompt, navigate to Emp-Manager directory and move to client directory.
 
 cd client
 
@@ -58,6 +58,7 @@ Once the required packages are installed, run the below command to start the ser
 
 npm run dev
 
+Once both client and server runs(in different terminals), navigate to the application by using the link in the client terminal/cmd window.
 
 🔑 Authentication Flow:
 

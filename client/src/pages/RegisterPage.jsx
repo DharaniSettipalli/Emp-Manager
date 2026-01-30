@@ -62,9 +62,13 @@ const RegisterPage = () => {
         }
       
     } catch (error) {
-        console.log(error?.response?.data?.message);
-        console.log(error)
-      toast.error(error?.response?.data?.error || error.message);
+       const err = error?.response?.data?.error || error.message
+      toast.error(err);
+      helpers.resetForm();
+      
+      if(err === 'User already exists, please login'){
+        navigate('/login')
+      }
     }finally{
         setLoading(false)
     }

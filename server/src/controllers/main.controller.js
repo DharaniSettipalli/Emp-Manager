@@ -12,7 +12,7 @@ exports.registerUser = async (req, res) => {
     //checking if user already exists
     const existUser = await UserModel.findOne({ email });
     if (existUser) {
-        throw new Error("User already exists")
+        throw new Error("User already exists, please login")
     }
     //Password hash
     const hash_pass = await bcryptjs.hash(password,10)
@@ -52,7 +52,7 @@ exports.loginUser = async (req, res) => {
     //checking if user already exists
     const existUser = await UserModel.findOne({ email });
     if (!existUser) {
-      throw new Error("User does not  exists");
+      throw new Error("User does not  exists, please register if you're a new user");
     }
     //Password comparison
     const isMatch = await bcryptjs.compare(password, existUser.password);

@@ -57,7 +57,12 @@ const LoginPage = () => {
         helpers.resetForm();
       }
     } catch (error) {
-      toast.error(error?.response?.data?.error || error.message);
+      const err = error?.response?.data?.error || error.message
+      toast.error(err);
+      helpers.resetForm();
+      if(err===`User does not  exists, please register if you're a new user`){
+        navigate('/register')
+      }
     } finally {
       setLoading(false);
     }

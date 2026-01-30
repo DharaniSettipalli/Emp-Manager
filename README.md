@@ -26,9 +26,11 @@ Database:MongoDB, Mongoose driver
 ==================================================================================
 ⚙️ Installation & Setup:
 
-1️⃣ Clone the Repository: Open a terminal or command prompt, clone the repo and change directory using below commands.
+1️⃣ Clone the Repository: Create a new folder and Open a terminal or command prompt from the new folder, clone the repo with below command.  
 
 git clone https://github.com/DharaniSettipalli/Emp-Manager.git
+
+change directory using below command:
 
 cd Emp-Manager
 
@@ -62,7 +64,7 @@ From client directory, run npm install command to install the required front end
 
 npm install
 
-Once the required packages are installed, run the below command to start the server
+Once the required packages are installed, run the below command to start the application
 
 npm run dev
 

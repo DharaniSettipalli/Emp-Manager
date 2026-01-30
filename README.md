@@ -40,6 +40,14 @@ cd server
 
 npm install
 
+Open .env file inside the server folder and add your own MONGO_URI. Please dont't change the PORT variable in the .env file.
+
+1) MONGO_URI =>  Details for creating the cluster and generating a connection string are present in the Mongo DB official site below.
+
+For this project, we've used MongoDB Atlas connection string, and it is recommended way. Please access the below link and navigate to this section: "How to get your MongoDB Atlas connection string" to create your connection string.
+
+https://www.mongodb.com/resources/products/fundamentals/mongodb-connection-string
+
 Start the backend server:
 
 npm run dev

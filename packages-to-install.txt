@@ -1,12 +1,1 @@
-client:
-
-tailwindcss
-@tailwindcss/vite
-react-icons
-react-redux
-@redux/toolkit
-react-router-dom
-yup
-formik
-react-toastify
-clsx
+Detailed steps to run the application in local is provided in the Readme file.
